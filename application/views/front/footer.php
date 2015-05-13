@@ -1,0 +1,1 @@
+<script type="text/javascript" src="<?php echo $this->config->item('base_url');?>assets/front/js/custom.js"></script>

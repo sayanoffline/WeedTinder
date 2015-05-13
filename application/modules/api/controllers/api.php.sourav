@@ -1,0 +1,192 @@
+<?php
+class api extends MY_Controller {
+
+        var $gallery_path;
+	var $gallery_path_url;
+	var $doc_path;
+        
+    public function __construct() {
+        	parent::__construct();
+		
+	 	$this->load->model('api_model');
+          	$this->load->helper('form','url');  
+          	$this->load->helper('text');
+         	
+                $this->gallery_path = realpath(APPPATH . '../assets/uploads');
+		$this->gallery_path_url = $this->config->item('base_url').'assets/uploads/';
+		$this->doc_path=realpath(APPPATH . '../assets/uploads/doc');
+		
+		
+    }
+    
+    public function index() {
+        $this->load->view('home');
+    }
+	
+	
+    public function userRegister(){        
+	$json = ($this->input->post('data'));
+        $arr = json_decode($json);
+        
+        $data['userId'] =create_guid();        	
+        $data['userName'] =$arr->add_email;
+        $data['password'] =md5($arr->add_password);
+        $data['addedOn'] =gmdate('Y-m-d H:i:s');
+        $data['deleted'] ='0';
+        $data['status'] =1;
+
+        $data1['userProfileId'] =create_guid();   
+        $data1['userId'] =$data['userId'];   
+        $data1['email'] =$arr->add_email;
+        $data1['fname'] =$arr->add_fname;
+        $data1['lname'] =$arr->add_lname;
+
+        //check if email field is empty
+        if($arr->add_email == ""){
+            $errorMsg=  "error : You did not enter a email.";
+            $code= "3";
+            $result=array("message"=>$errorMsg);
+            echo json_encode($result,JSON_PRETTY_PRINT);
+            exit();
+        } //check for valid email 
+        elseif(!preg_match("/^[_\.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+\.)+[a-zA-Z]{2,6}$/i", $arr->add_email)){
+            $errorMsg= 'error : You did not enter a valid email.';
+            $code= "3";
+            $result=array("message"=>$errorMsg);
+            echo json_encode($result,JSON_PRETTY_PRINT);
+            exit();
+        }
+        
+        $chkEmail = $this->api_model->checkEmail($data1);
+
+        if($chkEmail == 0){
+            $res=$this->api_model->userAdd($data,$data1);
+            $result=array("message"=>'Success');
+        }else{
+            $result=array("message"=>'Error');
+        }
+        echo json_encode($result,JSON_PRETTY_PRINT);
+    }
+    
+    public function login(){
+            $result = array();
+            //echo '<pre>';
+            $json = ($this->input->post('data'));
+            $arr = json_decode($json);
+            
+            //print_r($arr);
+            
+            $data['username'] =$arr->username;
+            $data['password'] =md5($arr->password);
+            
+            //print_r($data);
+            
+            //die();
+            if($data['username']!='' && $data['password']!=''){
+     		$res=$this->api_model->login($data);
+                
+                //print_r($res);
+                //die();
+        	if($res!=0){
+                    $data1['message'] = 'Success';
+                    $data1['userId'] = $res['userId'];
+                    $data1['name'] = $res['fname']." ".$res['lname'];;
+                    $data1['email'] = $res['email'];
+        	}else{
+                    $data1['message'] = 'error';
+                }
+            }else{
+                $data1['message'] = 'error';
+            }
+            echo json_encode($data1,JSON_PRETTY_PRINT);
+	}
+        
+    public function chatSave(){
+        $result = array();
+        //echo '<pre>'; //
+        $json = ($this->input->post('data'));
+        $arr = json_decode($json);
+        
+        //$data['chat_id'] =      create_guid();
+        $data['user_to'] =      $arr->user_to;
+        $data['user_from'] =    $arr->user_from;
+        $data['chat'] =         $arr->chat;
+        $data['chat_key'] =     $arr->chat_key;
+        $data['datetime'] =     $arr->datetime;   
+        $data['status'] =       1;   
+        
+        $res=$this->api_model->chatAdd($data);
+        $result=array("message"=>'Success');    
+    }
+    public function chatList(){
+        $result = array();
+        //echo '<pre>';
+        $json = ($this->input->post('data'));
+        $arr = json_decode($json);
+        
+    }
+    
+    public function updateProfile() {
+    
+    //echo '<pre>';
+    //$data = file_get_contents($_FILES['file']['tmp_name']);
+    //$data = base64_encode($data);  
+    
+    //print_r($data);
+	
+		$result = array();
+        //echo '<pre>'; //
+        $json = ($this->input->post('data'));
+        $arr = json_decode($json);
+		
+		$userId =          $arr->userId;
+        $data['q1'] =        $arr->q1;
+        $data['q2'] =        $arr->q2;
+        $data['q3'] =        $arr->q3;
+		$data['desc'] =        $arr->desc;
+        $data['profile_image'] =   $arr->profile_image;
+		
+		
+        $res=$this->api_model->updateProfile($data,$userId);
+	
+        
+    }
+    
+    public function sendFriendRequest() {        
+        $result = array();
+        //echo '<pre>'; //
+        $json = ($this->input->post('data'));
+        $arr = json_decode($json);
+        
+        $data['search_id'] =        create_guid();
+        $data['user_to'] =          $arr->user_to;
+        $data['user_from'] =        $arr->user_from;
+        $data['datetime'] =         $arr->datetime;   
+        $data['status'] =           $arr->status;   
+        
+        $res=$this->api_model->searchProfileStatus($data);
+        if($res=='1'){
+            $result=array("message"=>'Success');
+        }else{
+            $result=array("message"=>'Error');
+        }
+        echo json_encode($result,JSON_PRETTY_PRINT);
+        
+    }
+    
+    public function friendList() {        
+        $result = array();
+        //echo '<pre>'; //
+        $json = ($this->input->post('data'));
+        $arr = json_decode($json);
+        
+        
+        $data['user_to'] =   $arr->user_to;
+        
+    }
+    
+    
+    
+    
+}
+?>

@@ -1,0 +1,374 @@
+[17-Apr-2014 07:02:33 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'application/third_party/MX/Router.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sketchde/public_html/ecommerce_portal/application/core/MY_Router.php on line 4
+[21-Apr-2014 07:05:07 UTC] PHP Fatal error:  Class 'Product' not found in /home/sketchde/public_html/ecommerce_portal/application/third_party/MX/Loader.php on line 209
+[21-Apr-2014 08:03:45 UTC] PHP Fatal error:  Call to undefined method product::addCategory() in /home/sketchde/public_html/ecommerce_portal/application/modules/products/controllers/products.php on line 51
+[21-Apr-2014 08:11:16 UTC] PHP Fatal error:  Call to undefined method product::addCategory() in /home/sketchde/public_html/ecommerce_portal/application/modules/products/controllers/products.php on line 51
+[21-Apr-2014 08:13:35 UTC] PHP Fatal error:  Call to undefined method product::addCategory() in /home/sketchde/public_html/ecommerce_portal/application/modules/products/controllers/products.php on line 51
+[21-Apr-2014 08:13:47 UTC] PHP Fatal error:  Call to undefined method product::addCategory() in /home/sketchde/public_html/ecommerce_portal/application/modules/products/controllers/products.php on line 51
+[21-Apr-2014 08:17:33 UTC] PHP Fatal error:  Call to undefined method product::addCategory() in /home/sketchde/public_html/ecommerce_portal/application/modules/products/controllers/products.php on line 51
+[21-Apr-2014 09:07:56 UTC] PHP Fatal error:  Call to undefined method product::categoryEdit() in /home/sketchde/public_html/ecommerce_portal/application/modules/products/controllers/products.php on line 159
+[21-Apr-2014 09:45:26 UTC] PHP Fatal error:  Call to undefined method product::updCategoryImage() in /home/sketchde/public_html/ecommerce_portal/application/modules/products/controllers/products.php on line 223
+[21-Apr-2014 09:46:05 UTC] PHP Fatal error:  Call to undefined method product::updCategoryImage() in /home/sketchde/public_html/ecommerce_portal/application/modules/products/controllers/products.php on line 223
+[22-Apr-2014 10:39:22 UTC] PHP Fatal error:  Call to undefined method attribute::brandCount() in /home/sketchde/public_html/ecommerce_portal/application/modules/attributes/controllers/attributes.php on line 50
+[23-Apr-2014 08:34:54 UTC] PHP Fatal error:  Call to undefined method merchant::getBrandList() in /home/sketchde/public_html/ecommerce_portal/application/modules/merchants/controllers/merchants.php on line 22
+[23-Apr-2014 10:28:47 UTC] PHP Fatal error:  Call to a member function brandEdit() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/merchants/controllers/merchants.php on line 165
+[23-Apr-2014 10:40:31 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/sketchde/public_html/ecommerce_portal/application/modules/merchants/views/edit_merchant.php on line 153
+[24-Apr-2014 06:32:38 UTC] PHP Fatal error:  Call to a member function getAttributeList() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/attributes/controllers/attributes.php on line 120
+[24-Apr-2014 07:11:07 UTC] PHP Fatal error:  Call to undefined method attribute::attributeSetCount() in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/controllers/attribute_sets.php on line 50
+[25-Apr-2014 06:45:20 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/sketchde/public_html/ecommerce_portal/application/modules/categories/views/edit_category.php on line 27
+[25-Apr-2014 06:45:45 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/sketchde/public_html/ecommerce_portal/application/modules/categories/views/edit_category.php on line 31
+[25-Apr-2014 06:46:10 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/sketchde/public_html/ecommerce_portal/application/modules/categories/views/edit_category.php on line 31
+[25-Apr-2014 17:06:55 Asia/Calcutta] PHP Fatal error:  Call to a member function getMerchantList() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/controllers/attribute_sets.php on line 25
+[25-Apr-2014 17:08:11 Asia/Calcutta] PHP Fatal error:  Call to a member function getMerchantList() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/controllers/attribute_sets.php on line 25
+[25-Apr-2014 17:08:29 Asia/Calcutta] PHP Fatal error:  Call to a member function getMerchantList() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/controllers/attribute_sets.php on line 25
+[25-Apr-2014 11:52:44 UTC] PHP Fatal error:  Call to undefined method attribute::getMerchantList() in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/controllers/attribute_sets.php on line 23
+[25-Apr-2014 11:53:55 UTC] PHP Fatal error:  Call to undefined method attribute::getBrandList() in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/controllers/attribute_sets.php on line 28
+[25-Apr-2014 11:54:34 UTC] PHP Fatal error:  Call to undefined method attribute::getBrandList() in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/controllers/attribute_sets.php on line 28
+[25-Apr-2014 13:10:55 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/controllers/attribute_sets.php on line 174
+[26-Apr-2014 05:14:46 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/models/attribute.php on line 89
+[26-Apr-2014 05:15:22 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/models/attribute.php on line 89
+[26-Apr-2014 05:35:07 UTC] PHP Fatal error:  Call to undefined method product::getCustomAttrSet() in /home/sketchde/public_html/ecommerce_portal/application/modules/products/controllers/products.php on line 33
+[28-Apr-2014 05:21:02 UTC] PHP Fatal error:  Cannot use [] for reading in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/views/edit_attribute_set.php on line 62
+[28-Apr-2014 06:23:38 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/views/edit_attribute_set.php on line 92
+[28-Apr-2014 13:19:18 Asia/Calcutta] PHP Fatal error:  Call to a member function getCategoryList() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/attribute_sets/views/attribute_set_list.php on line 41
+[28-Apr-2014 08:18:16 UTC] PHP Fatal error:  Call to a member function getMerchantList() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/brands/controllers/brands.php on line 24
+[28-Apr-2014 08:20:57 UTC] PHP Fatal error:  Call to a member function getMerchantList() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/brands/controllers/brands.php on line 24
+[28-Apr-2014 08:24:25 UTC] PHP Fatal error:  Call to a member function getMerchantList() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/brands/controllers/brands.php on line 139
+[29-Apr-2014 07:25:57 UTC] PHP Fatal error:  Call to undefined method login::checkOldPass() in /home/sketchde/public_html/ecommerce_portal/application/modules/users/controllers/users.php on line 101
+[29-Apr-2014 12:23:59 UTC] PHP Fatal error:  Call to undefined function generate_password() in /home/sketchde/public_html/ecommerce_portal/application/modules/users/controllers/users.php on line 139
+[04-May-2014 08:36:17 UTC] PHP Parse error:  syntax error, unexpected $end in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 357
+[04-May-2014 08:58:28 UTC] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in /home/sketchde/public_html/ecommerce_portal/application/libraries/Facebook/FacebookSession.php on line 89
+[04-May-2014 09:00:23 UTC] PHP Fatal error:  Class 'Facebook' not found in /home/sketchde/public_html/ecommerce_portal/application/modules/home/controllers/home.php on line 25
+[04-May-2014 18:52:24 UTC] PHP Parse error:  syntax error, unexpected $end in /home/sketchde/public_html/ecommerce_portal/application/modules/home/controllers/home.php on line 189
+[05-May-2014 08:20:28 UTC] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/sketchde/public_html/ecommerce_portal/application/libraries/base_facebook.php on line 1325
+[05-May-2014 08:20:54 UTC] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/sketchde/public_html/ecommerce_portal/application/libraries/base_facebook.php on line 1325
+[05-May-2014 09:08:09 UTC] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/sketchde/public_html/ecommerce_portal/application/libraries/base_facebook.php on line 1325
+[05-May-2014 09:08:20 UTC] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/sketchde/public_html/ecommerce_portal/application/libraries/base_facebook.php on line 1325
+[05-May-2014 09:54:35 UTC] OAuthException: An active access token must be used to query information about the current user.
+[05-May-2014 10:34:14 UTC] PHP Fatal error:  Call to a member function getLogoutUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/home/controllers/home.php on line 206
+[05-May-2014 10:47:35 UTC] PHP Fatal error:  Call to a member function getLogoutUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/home/controllers/home.php on line 207
+[05-May-2014 11:22:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[06-May-2014 05:10:07 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 197
+[06-May-2014 05:10:29 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 197
+[06-May-2014 05:21:03 UTC] PHP Fatal error:  Cannot redeclare class LightOpenID in /home/sketchde/public_html/ecommerce_portal/application/libraries/openid.php on line 51
+[06-May-2014 05:21:39 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 197
+[06-May-2014 06:15:25 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 197
+[06-May-2014 06:15:50 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 197
+[06-May-2014 06:16:34 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 197
+[06-May-2014 06:17:36 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 197
+[06-May-2014 06:24:42 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 197
+[06-May-2014 06:26:01 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 198
+[06-May-2014 06:26:57 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 198
+[06-May-2014 06:33:54 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 199
+[06-May-2014 06:35:43 UTC] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'No identity supplied.' in /home/sketchde/public_html/ecommerce_portal/openid.php:405
+Stack trace:
+#0 /home/sketchde/public_html/ecommerce_portal/openid.php(671): LightOpenID->discover(NULL)
+#1 /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php(202): LightOpenID->authUrl()
+#2 /home/sketchde/public_html/ecommerce_portal/application/third_party/MX/Loader.php(321): include('/home/sketchde/...')
+#3 /home/sketchde/public_html/ecommerce_portal/application/third_party/MX/Loader.php(269): MX_Loader->_ci_load(Array)
+#4 /home/sketchde/public_html/ecommerce_portal/application/modules/home/views/home.php(1): MX_Loader->view('front/header')
+#5 /home/sketchde/public_html/ecommerce_portal/application/third_party/MX/Loader.php(321): include('/home/sketchde/...')
+#6 /home/sketchde/public_html/ecommerce_portal/application/third_party/MX/Loader.php(269): MX_Loader->_ci_load(Array)
+#7 /home/sketchde/public_html/ecommerce_portal/application/modules/home/ in /home/sketchde/public_html/ecommerce_portal/openid.php on line 405
+[06-May-2014 11:54:19 UTC] PHP Fatal error:  Call to undefined method MY_Controller::Controller() in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 7
+[06-May-2014 11:54:54 UTC] PHP Fatal error:  Call to a member function load() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 8
+[06-May-2014 11:56:29 UTC] PHP Fatal error:  Call to a member function load() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 8
+[06-May-2014 11:58:08 UTC] PHP Fatal error:  Call to a member function library() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 9
+[06-May-2014 11:59:34 UTC] PHP Fatal error:  Call to a member function library() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 9
+[06-May-2014 12:02:07 UTC] PHP Fatal error:  Call to a member function library() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 9
+[06-May-2014 12:03:14 UTC] PHP Fatal error:  Call to a member function library() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 9
+[06-May-2014 12:08:51 UTC] PHP Fatal error:  Call to a member function library() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 9
+[06-May-2014 12:09:46 UTC] PHP Fatal error:  Call to a member function library() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 9
+[06-May-2014 12:15:25 UTC] PHP Fatal error:  Call to a member function library() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 9
+[06-May-2014 12:17:39 UTC] PHP Fatal error:  Call to a member function library() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/googlelogin/controllers/googlelogin.php on line 9
+[06-May-2014 12:52:58 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/sketchde/public_html/ecommerce_portal/application/modules/home/controllers/home.php on line 147
+[06-May-2014 12:52:59 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/sketchde/public_html/ecommerce_portal/application/modules/home/controllers/home.php on line 147
+[06-May-2014 13:02:42 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:02:42 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:02:46 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:02:46 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:02:53 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:02:54 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:03:04 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:03:04 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:03:12 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:03:12 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:03:48 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:03:49 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:05:48 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:05:48 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:06:15 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:07:25 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:07:26 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:07:38 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:07:39 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:07:47 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:07:48 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:07:50 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:11:26 UTC] PHP Fatal error:  Cannot redeclare class LightOpenID in /home/sketchde/public_html/ecommerce_portal/openid.php on line 51
+[06-May-2014 13:11:56 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:11:56 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:17:23 UTC] PHP Fatal error:  Cannot redeclare class LightOpenID in /home/sketchde/public_html/ecommerce_portal/openid.php on line 51
+[06-May-2014 13:17:37 UTC] PHP Fatal error:  Cannot redeclare class LightOpenID in /home/sketchde/public_html/ecommerce_portal/openid.php on line 51
+[06-May-2014 13:17:41 UTC] PHP Fatal error:  Cannot redeclare class LightOpenID in /home/sketchde/public_html/ecommerce_portal/openid.php on line 51
+[06-May-2014 13:18:57 UTC] PHP Parse error:  syntax error, unexpected $end, expecting T_VARIABLE or T_DOLLAR_OPEN_CURLY_BRACES or T_CURLY_OPEN in /home/sketchde/public_html/ecommerce_portal/application/modules/home/models/home_model.php on line 121
+[06-May-2014 13:38:36 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:39:14 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:39:59 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 13:45:55 UTC] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE in /home/sketchde/public_html/ecommerce_portal/application/modules/home/controllers/home.php on line 353
+[06-May-2014 13:57:43 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 14:01:05 UTC] PHP Fatal error:  Call to a member function getUserInfos() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/modules/home/controllers/home.php on line 185
+[06-May-2014 14:01:27 UTC] PHP Parse error:  syntax error, unexpected $end in /home/sketchde/public_html/ecommerce_portal/application/modules/home/controllers/home.php on line 352
+[06-May-2014 14:08:45 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[06-May-2014 14:08:46 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:45:31 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:45:59 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:46:02 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:46:03 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:46:11 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:47:45 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:50:28 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:52:04 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:52:37 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:53:51 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:54:50 UTC] PHP Fatal error:  Call to a member function authUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 204
+[07-May-2014 06:59:06 UTC] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'openid1.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sketchde/public_html/ecommerce_portal/application/libraries/public_init_elements.php on line 55
+[07-May-2014 07:10:41 UTC] PHP Fatal error:  Call to a member function returnUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 209
+[07-May-2014 07:15:08 UTC] PHP Fatal error:  Call to a member function returnUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 209
+[07-May-2014 07:20:25 UTC] PHP Fatal error:  Call to a member function returnUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 209
+[07-May-2014 07:21:18 UTC] PHP Fatal error:  Call to undefined method LightOpenID::returnUrl() in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 209
+[07-May-2014 07:22:02 UTC] PHP Fatal error:  Call to undefined method LightOpenID::returnUrl() in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 209
+[07-May-2014 07:26:23 UTC] PHP Fatal error:  Call to undefined method LightOpenID::returnUrl() in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 209
+[07-May-2014 07:26:47 UTC] PHP Fatal error:  Call to a member function returnUrl() on a non-object in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 209
+[07-May-2014 07:26:55 UTC] PHP Fatal error:  Call to undefined method LightOpenID::returnUrl() in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 209
+[07-May-2014 07:27:12 UTC] PHP Fatal error:  Call to undefined method LightOpenID::returnUrl() in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 209
+[07-May-2014 07:27:54 UTC] PHP Fatal error:  Call to undefined method LightOpenID::returnUrl() in /home/sketchde/public_html/ecommerce_portal/application/views/front/header.php on line 209
+[28-May-2014 15:52:06] PHP Fatal error:  Call to undefined function php_info() in /home/gsinfoin/public_html/php_info.php on line 2
+[28-May-2014 15:52:39] PHP Fatal error:  Call to undefined function php_info() in /home/gsinfoin/public_html/php_info.php on line 2
+[28-May-2014 16:12:42] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'openid.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/gsinfoin/public_html/application/modules/home/models/home_model.php on line 2
+[28-May-2014 16:14:40] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'openid.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/gsinfoin/public_html/application/modules/home/models/home_model.php on line 2
+[28-May-2014 16:15:43] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'openid.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/gsinfoin/public_html/application/modules/home/models/home_model.php on line 2
+[28-May-2014 16:16:21] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'openid.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/gsinfoin/public_html/application/modules/home/models/home_model.php on line 2
+[28-May-2014 16:16:32] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'openid.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/gsinfoin/public_html/application/modules/home/models/home_model.php on line 2
+[28-May-2014 16:17:46] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'openid.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/gsinfoin/public_html/application/libraries/public_init_elements.php on line 67
+[28-May-2014 17:00:46] PHP Fatal error:  Call to undefined method CI_Session::flash() in /home/gsinfoin/public_html/application/modules/home/views/contact.php on line 11
+[28-May-2014 18:22:36] PHP Fatal error:  Call to undefined method home_model::findProdByName() in /home/gsinfoin/public_html/application/modules/home/controllers/home.php on line 404
+[28-May-2014 18:22:36] PHP Fatal error:  Call to undefined method home_model::findProdByName() in /home/gsinfoin/public_html/application/modules/home/controllers/home.php on line 404
+[28-May-2014 18:22:38] PHP Fatal error:  Call to undefined method home_model::findProdByName() in /home/gsinfoin/public_html/application/modules/home/controllers/home.php on line 404
+[28-May-2014 18:22:46] PHP Fatal error:  Call to undefined method home_model::findProdByName() in /home/gsinfoin/public_html/application/modules/home/controllers/home.php on line 404
+[28-May-2014 18:38:10] PHP Fatal error:  Call to undefined method CI_Session::flash() in /home/gsinfoin/public_html/application/modules/home/views/contact.php on line 11
+[28-May-2014 18:38:38] PHP Fatal error:  Call to undefined method CI_Session::flash() in /home/gsinfoin/public_html/application/modules/home/views/contact.php on line 11
+[29-May-2014 15:28:10] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home/gsinfoin/public_html/application/modules/brands/views/front/brand_product.php on line 14
+[29-May-2014 17:37:41] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/gsinfoin/public_html/application/modules/products/controllers/products.php on line 375
+[29-May-2014 17:37:45] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/gsinfoin/public_html/application/modules/products/controllers/products.php on line 375
+[29-May-2014 17:37:48] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/gsinfoin/public_html/application/modules/products/controllers/products.php on line 375
+[29-May-2014 17:37:59] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/gsinfoin/public_html/application/modules/products/controllers/products.php on line 375
+[29-May-2014 17:38:10] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/gsinfoin/public_html/application/modules/products/controllers/products.php on line 375
+[29-May-2014 17:38:25] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/gsinfoin/public_html/application/modules/products/controllers/products.php on line 375
+[29-May-2014 17:38:48] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/gsinfoin/public_html/application/modules/products/controllers/products.php on line 375
+[29-May-2014 17:38:48] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/gsinfoin/public_html/application/modules/products/controllers/products.php on line 375
+[29-May-2014 18:26:21] PHP Parse error:  syntax error, unexpected $end in /home/gsinfoin/public_html/application/modules/products/views/front/compare.php on line 160
+[31-May-2014 20:11:50 Asia/Calcutta] PHP Warning:  PHP Startup: XCache: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:11:51 Asia/Calcutta] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:11:51 Asia/Calcutta] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:11:51 Asia/Calcutta] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[31-May-2014 20:11:51 Asia/Calcutta] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:11:51 Asia/Calcutta] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:11:51 Asia/Calcutta] PHP Deprecated:  Directive 'safe_mode' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[31-May-2014 20:11:57 Asia/Calcutta] PHP Warning:  PHP Startup: XCache: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:11:57 Asia/Calcutta] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:11:57 Asia/Calcutta] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:11:57 Asia/Calcutta] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[31-May-2014 20:11:57 Asia/Calcutta] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:11:57 Asia/Calcutta] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:11:57 Asia/Calcutta] PHP Deprecated:  Directive 'safe_mode' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[31-May-2014 20:12:07 Asia/Calcutta] PHP Warning:  PHP Startup: XCache: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:12:07 Asia/Calcutta] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:12:07 Asia/Calcutta] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:12:07 Asia/Calcutta] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/sqlite.so: undefined symbol: third_arg_force_ref in Unknown on line 0
+[31-May-2014 20:12:07 Asia/Calcutta] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:12:07 Asia/Calcutta] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20090626
+These options need to match
+ in Unknown on line 0
+[31-May-2014 20:12:07 Asia/Calcutta] PHP Deprecated:  Directive 'safe_mode' is deprecated in PHP 5.3 and greater in Unknown on line 0
+[03-Jun-2014 18:12:18 Asia/Calcutta] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ')' in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 779
+[03-Jun-2014 18:12:19 Asia/Calcutta] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ')' in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 779
+[03-Jun-2014 18:12:23 Asia/Calcutta] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ')' in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 779
+[03-Jun-2014 18:12:25 Asia/Calcutta] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ')' in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 779
+[03-Jun-2014 18:12:39 Asia/Calcutta] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ')' in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 779
+[03-Jun-2014 18:12:44 Asia/Calcutta] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ')' in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 779
+[04-Jun-2014 13:33:59 Asia/Calcutta] PHP Fatal error:  Can't use method return value in write context in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 888
+[04-Jun-2014 13:37:02 Asia/Calcutta] PHP Fatal error:  Can't use method return value in write context in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 888
+[04-Jun-2014 13:37:08 Asia/Calcutta] PHP Fatal error:  Can't use method return value in write context in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 888
+[04-Jun-2014 13:40:05 Asia/Calcutta] PHP Fatal error:  Can't use method return value in write context in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 888
+[04-Jun-2014 13:40:11 Asia/Calcutta] PHP Fatal error:  Can't use method return value in write context in /home/gsinfoin/public_html/application/modules/products/models/product.php on line 888
+[04-Jun-2014 13:43:58 Asia/Calcutta] PHP Fatal error:  Can't use method return value in write context in /home/gsinfoin/public_html/application/modules/products/controllers/product_details.php on line 98
+[04-Jun-2014 20:02:02 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ';' in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 278
+[04-Jun-2014 20:02:41 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ';' in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 278
+[04-Jun-2014 20:02:45 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ';' in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 278
+[04-Jun-2014 20:03:14 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ';' in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 278
+[04-Jun-2014 20:03:15 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ';' in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 278
+[09-Jun-2014 16:53:19 Asia/Calcutta] PHP Fatal error:  Call to undefined method product::productListByCategoryPagination() in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 177
+[09-Jun-2014 16:53:59 Asia/Calcutta] PHP Fatal error:  Call to undefined method product::productListByCategoryPagination() in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 177
+[09-Jun-2014 16:54:06 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 183
+[09-Jun-2014 16:59:12 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:00:45 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:00:51 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:00:53 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:01:11 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:01:14 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:02:29 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:02:39 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:06:00 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:09:18 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:09:44 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:09:48 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:10:03 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:10:07 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:10:08 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:10:51 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:11:34 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:11:34 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:12:52 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:13:15 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:13:52 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:13:56 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:15:22 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:15:39 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:15:42 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:15:53 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 184
+[09-Jun-2014 17:17:20 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 185
+[09-Jun-2014 17:17:38 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 185
+[09-Jun-2014 17:18:06 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 185
+[09-Jun-2014 17:18:07 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 185
+[09-Jun-2014 17:20:55 Asia/Calcutta] PHP Fatal error:  Call to undefined method product::productListByCategorycount() in /home/gsinfoin/public_html/application/modules/products/controllers/product_details.php on line 86
+[09-Jun-2014 17:28:08 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in /home/gsinfoin/public_html/application/modules/products/views/front/ajaxsearchlist.php on line 61
+[10-Jun-2014 18:03:08 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ';' in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 366
+[10-Jun-2014 18:03:53 Asia/Calcutta] PHP Parse error:  syntax error, unexpected ';' in /home/gsinfoin/public_html/application/modules/products/views/front/searchlist.php on line 366
+[10-Jun-2014 18:56:00 Asia/Calcutta] PHP Fatal error:  Call to undefined method product::productListByBrandPagination() in /home/gsinfoin/public_html/application/modules/brands/views/front/brand_product.php on line 132
+[11-Jun-2014 17:51:07 Asia/Calcutta] PHP Fatal error:  Cannot redeclare admin::categorysearch() in /home/gsinfoin/public_html/application/modules/categories/controllers/admin.php on line 299
+[11-Jun-2014 19:39:01 Asia/Calcutta] PHP Fatal error:  Class 'CI_Controller' not found in /home/gsinfoin/public_html/system/core/CodeIgniter.php on line 233
+[11-May-2015 06:10:21 UTC] PHP Fatal error:  Class 'CI_Controller' not found in /home/slcorpdev/public_html/WeedTinder/system/core/CodeIgniter.php on line 233
+[11-May-2015 06:51:17 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 07:45:28 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 07:45:43 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 07:45:49 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:12:30 UTC] PHP Fatal error:  Class 'CI_Controller' not found in /home/slcorpdev/public_html/WeedTinder/system/core/CodeIgniter.php on line 233
+[11-May-2015 08:12:34 UTC] PHP Fatal error:  Class 'CI_Controller' not found in /home/slcorpdev/public_html/WeedTinder/system/core/CodeIgniter.php on line 233
+[11-May-2015 08:17:12 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:17:44 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:17:48 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:17:59 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:18:04 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:30 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:33 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:35 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:36 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:39 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:41 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:42 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:45 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:47 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:47 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:49 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:50 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:53 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:55 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:56 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:19:59 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:01 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:02 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:05 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:08 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:08 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:11 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:13 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:14 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:16 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:18 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:20 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:23 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:26 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:29 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:31 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:34 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:36 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:39 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:20:42 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:29:48 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 176
+[11-May-2015 08:30:02 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:30:02 UTC] PHP Fatal error:  Call to a member function lpush() on a non-object in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 237
+[11-May-2015 08:48:51 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 08:48:51 UTC] PHP Fatal error:  Call to a member function lpush() on a non-object in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 237
+[11-May-2015 08:50:34 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 176
+[11-May-2015 09:25:18 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 09:25:50 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 182
+[11-May-2015 09:30:40 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 176
+[11-May-2015 09:32:14 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 10:33:18 UTC] PHP Fatal error:  Call to undefined function json_encoded() in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 172
+[11-May-2015 10:42:03 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 182
+[11-May-2015 10:57:24 UTC] PHP Strict Standards:  Declaration of MY_Exceptions::show_404() should be compatible with CI_Exceptions::show_404($page = '', $log_error = true) in /home/slcorpdev/public_html/WeedTinder/application/core/MY_Exceptions.php on line 39
+[11-May-2015 11:06:55 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 185
+[11-May-2015 12:42:11 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 178
+[11-May-2015 12:55:41 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/slcorpdev/public_html/WeedTinder/application/modules/api/controllers/api.php on line 178
