@@ -178,7 +178,12 @@ class api extends MY_Controller {
         //print_r($arr);        
         //echo json_encode($arr);
         
-        
+        if($res=='1'){
+            $result=array("message"=>'Success');
+        }else{
+            $result=array("message"=>'Error');
+        }
+        echo json_encode($result,JSON_PRETTY_PRINT);
         
         
         
