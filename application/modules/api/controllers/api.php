@@ -141,7 +141,7 @@ class api extends MY_Controller {
     
 	
 	$result = array();
-        echo '<pre>'; //
+        //echo '<pre>'; //
                 
         $json = ($this->input->post('data'));
         $arr = json_decode($json);
@@ -153,9 +153,9 @@ class api extends MY_Controller {
         $data['desc'] =        $arr->desc;
         
         
-        print_r($data);    
+        //print_r($data);    
         $profileImages = array();
-	foreach ($arr->profile_images as $key => $value) {
+		foreach ($arr->profile_images as $key => $value) {
             //echo $key.$value;
             //echo '<br>';
             $profileImages[$key] = $value;            
@@ -214,8 +214,19 @@ class api extends MY_Controller {
         
         
         $data['user_to'] =   $arr->user_to;
+		
+		$res=$this->api_model->friendList($data);
+		
+        if($res=='0'){
+            $result=array("message"=>'No Friends');
+        }else{
+            $result=$res;
+        }
+        echo json_encode($result,JSON_PRETTY_PRINT);
+		
+		
         
-    }
+    } 
     
     public function chatCheck($user){
         $this->load->helper('test');
@@ -270,7 +281,77 @@ class api extends MY_Controller {
         
     }
     
-    
+    // This is the function for search friend. (Developed by: Avishake Bhattacharjee on 07.05.2015)
+    public function search_friend() { 
+		//$result = array();
+		$json = ($this->input->post('data'));
+		$arr = json_decode($json);	
+		
+		$lat = $arr->lat;
+		$long = $arr->long;
+		$uid = $arr->userid;
+		
+        $data['lat'] = $lat;
+		$data['long'] = $long;
+		$data['userid'] = $uid;
+		$finalarr=$this->api_model->search_friend($data);
+		echo json_encode($finalarr,JSON_PRETTY_PRINT);
+    }
+	
+	// This is the function for update GPS information of an user. (Developed by: Avishake Bhattacharjee on 07.05.2015)
+	public function update_gpsinfo() { 
+		//$result = array();
+		$json = ($this->input->post('data'));
+		$arr = json_decode($json);	
+		
+		$lat = $arr->lat;
+		$long = $arr->long;
+		$uid = $arr->userid;
+			
+        $data['lat'] = $lat;
+		$data['long'] = $long;
+        $data['userid'] = $uid;
+		$finalarr=$this->api_model->update_gpsinfo($data);
+		if($finalarr=='1'){
+            $result=array("message"=>'Success');
+        }else{
+            $result=array("message"=>'Error');
+        }
+        echo json_encode($result,JSON_PRETTY_PRINT);
+    }
+	
+	// This is the function for Update Setting Page. (Developed by: Avishake Bhattacharjee on 08.05.2015)
+	/*
+		In this particular thing, there something need to send by App developer.
+		For Both Gender send 0.
+		For Male Gender send 1.
+		For Female Gender send 2.
+	*/
+    public function profile_setting() { 
+		//$result = array();
+		$json = ($this->input->post('data'));
+		$arr = json_decode($json);	
+		
+		$min_age = $arr->min_age;
+		$max_age = $arr->max_age;
+		$distance = $arr->distance;
+		$gender = $arr->gender;
+		$uid = $arr->userid;
+		
+		
+        $data['userid'] = $uid;
+		$data['min_age'] = $min_age;
+		$data['max_age'] = $max_age;
+		$data['distance'] = $distance;
+		$data['gender'] = $gender;
+		$finalarr=$this->api_model->update_gpsinfo($data);
+		if($finalarr=='1'){
+            $result=array("message"=>'Success');
+        }else{
+            $result=array("message"=>'Error');
+        }
+        echo json_encode($result,JSON_PRETTY_PRINT);
+    }
     
     
     

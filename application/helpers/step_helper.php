@@ -108,18 +108,51 @@ function randomNumber() {
 }
 function arrayToJSON($arr)
 {	
-if(count($arr) > 0)
-{		
-for($i=0; $i<count($arr); $i++)
-{
-$data = @unserialize($arr[$i]);
-if($data !== false )
-{
-$arr[$i] = unserialize($arr[$i]);	
-}	
+	if(count($arr) > 0)
+	{		
+		for($i=0; $i<count($arr); $i++)
+		{
+			$data = @unserialize($arr[$i]);
+			if($data !== false )
+			{
+				$arr[$i] = unserialize($arr[$i]);	
+			}	
+		}
+	}
+	return json_encode($arr);
 }
+
+
+
+function distancefromto($lat1, $lon1, $lat2, $lon2, $unit) {
+    $theta = $lon1 - $lon2;
+    $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) +  cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
+    $dist = acos($dist);
+    $dist = rad2deg($dist);
+    $miles = $dist * 60 * 1.1515;
+    $unit = strtoupper($unit);
+
+    if ($unit == "K") {
+      return ($miles * 1.609344);
+    } else if ($unit == "N") {
+        return ($miles * 0.8684);
+      } else {
+          return $miles;
+        }
 }
-return json_encode($arr);
+
+function aasort (&$array, $key) {
+	$sorter=array();
+	$ret=array();
+	reset($array);
+	foreach ($array as $ii => $va) {
+		$sorter[$ii]=$va[$key];
+	}
+	asort($sorter);
+	foreach ($sorter as $ii => $va) {
+		$ret[$ii]=$array[$ii];
+	}
+	$array=$ret;
 }
 
 ?>

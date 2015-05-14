@@ -120,9 +120,86 @@ class api_model extends MY_Model {
 		
 		$this->db->where('userId',$userId);
 		$this->db->update('user_profile',$updData);
-	}    
+	}     
+    
+	
+	public function friendList($res){
+		$user_to = $res['user_to'];
+		$query1=$this->db->query("SELECT * FROM user_friends WHERE  `user_to`='".$user_to."'  AND status!='1' "); 
+        $totRow1=$query1->num_rows();
+		if($totRow1 > 0){
+			return $res = $this->db->result_array();
+		}else{
+			return 0;
+		}
+	}
+	
+	// Function for search friend Request (Developed By: Avishake Bhattacharjee on 07.05.2015)
+    public function search_friend($res) {
+        $unit='M';
+        $lat1 = $res['lat'];
+        $lon1 = $res['long'];
+		$user_id=$res['userid'];
+		$profile_query=$this->db->query("SELECT * FROM `user_profile` Where userId='".$user_id."'");
+        $res_profile=$profile_query->result_array();
+		$row_profile=mysqli_fetch_assoc($res_profile);
+		$distancevalue=$row_profile['diatance'];
+		$gen=$row_profile['search_gender'];
+		$min_a=$row_profile['min_age'];
+		$max_a=$row_profile['max_age'];
+		$run_query='SELECT * FROM `user_profile` WHERE `age` BETWEEN '.$min_a.' AND '.$max_a;
+		if($gen==1){
+			$res_gen=$run_query.' AND gender='.$gen;
+		}
+		if($gen==2){
+			$res_gen=$run_query.' AND gender='.$gen;
+		}
+		$q=$this->db->query($run_query);
+        $res=$q->result_array();
+		while ($rowmain=mysqli_fetch_assoc($res)){
+			$lat2=$rowmain['lat'];
+			$lon2=$rowmain['lon'];
+			$dis=distancefromto($lat1,$lon1,$lat2,$lon2,$unit);
+			$distance=round($dis,2);
+			$rowmain['distance']=$distance;
+			if($distance<=$distancevalue){
+				$rArray[]=$rowmain;
+			}
+		}
+        aasort($rArray,"distance");
+		return $rArray;
+    }
+    
+	// Function for Update GPS information of an user (Developed By: Avishake Bhattacharjee on 07.05.2015)
+    public function update_gpsinfo($res) {
+        $lat = $res['lat'];
+        $lon = $res['long'];
+		$user_id=$res['userid'];
+		$table= 'user_profile';
+		$data = array('lat' => $lat, 'lon' => $lon);
+		$where = "userId=".$user_id;
+		$str = $this->db->update_string($table, $data, $where);
+		return 1;
+    }
+	
+    // Function for Update GPS information of an user (Developed By: Avishake Bhattacharjee on 07.05.2015)
+    public function profile_setting($res) {
+		$user_id=$res['userid'];
+		$min_age = $res['min_age'];
+        $max_age = $res['max_age'];
+		$distance = $res['distance'];
+		$gender = $res['gender'];
+		$table= 'user_profile';
+		$data = array('min_age' => $min_age, 'max_age' => $max_age, 'diatance' => $distance, 'search_gender' => $gender);
+		$where = "userId=".$user_id;
+		$str = $this->db->update_string($table, $data, $where);
+		return 1;
+    }
     
     
-    
+	
+	
+	
+	
 }
 ?>
