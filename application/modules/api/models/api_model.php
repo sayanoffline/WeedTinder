@@ -87,16 +87,20 @@ class api_model extends MY_Model {
         $status = $res['status'];
         $date= date('Y-m-d');
         
-        $query1=$this->db->query("SELECT * FROM user_search_partners WHERE (`user_from`='".$user_from."' AND `user_to`='".$user_to."')  AND status!='1' AND DATEDIFF($date , DATE(datetime)) >= 30 "); //OR (`user_to`='".$user_from."' AND `user_from`='".$user_to."')
+        $query1=$this->db->query("SELECT * FROM user_search_partners WHERE (`user_from`='".$user_from."' AND `user_to`='".$user_to."')"); 
         $totRow1=$query1->num_rows();
         
         $query2=$this->db->query("SELECT * FROM user_search_partners WHERE (`user_to`='".$user_from."' AND `user_from`='".$user_to."')  AND status='1'  ");
         $totRow2=$query2->num_rows();
         
-        if($totRow=='0'){            
-            $this->db->insert('user_search_partners', $res);
+        if($totRow1=='0'){  
+        
+        	     
+            	$this->db->insert('user_search_partners', $res);
             
-            if($totRow2=='1' && $status=='1'){
+            	
+            	
+        	if($totRow2=='1'){
                 
                 $row['friend_id'] = create_guid();
                 $row['user_to'] = $res['user_to'];
@@ -106,11 +110,12 @@ class api_model extends MY_Model {
                 $row['deleted'] ='0';
                 $row['chat_key'] = 'chat_'.randomNumber();
                 $this->db->insert('user_friends', $row);
-            }
+            	}
             
             return 1;
         }else{
-            return 0;
+        	
+            	return 1;
         }
         
     }
@@ -119,35 +124,80 @@ class api_model extends MY_Model {
 	{
 		
 		$this->db->where('userId',$userId);
-		$this->db->update('user_profile',$updData);
+		if($this->db->update('user_profile',$updData))
+		{
+			return 1;
+		}else{
+			return 0;
+		}
 	}     
     
 	
 	public function friendList($res){
 		$user_to = $res['user_to'];
-		$query1=$this->db->query("SELECT * FROM user_friends WHERE  `user_to`='".$user_to."'  AND status!='1' "); 
-        $totRow1=$query1->num_rows();
+		
+		$res = array();
+		
+		
+		$this->db->select('user_profile .*, user_friends.chat_key');
+		$this->db->from('user_friends');
+		$this->db->join('user_profile', 'user_friends.user_from = user_profile.userId');
+		
+		$this->db->where('user_friends.status', '1');
+		$this->db->where('user_profile.userId !=', $user_to);
+		$this->db->where('user_friends.user_to', $user_to);
+		
+		$query1 = $this->db->get();
+		$totRow1=$query1->num_rows();
+		
 		if($totRow1 > 0){
-			return $res = $this->db->result_array();
-		}else{
-			return 0;
+			$res = $query1->result_array();
 		}
+		//print_r($res );die;
+		
+		$this->db->select('user_profile .*, user_friends.chat_key');
+			$this->db->from('user_friends');
+			$this->db->join('user_profile', 'user_friends.user_to = user_profile.userId');
+			
+			$this->db->where('user_friends.status', '1');
+			$this->db->where('user_profile.userId !=', $user_to);
+			$this->db->where('user_friends.user_from', $user_to);
+			
+			$query2 = $this->db->get();
+			$totRow2=$query2->num_rows();
+			
+			if($totRow2 > 0){
+				$res= array_merge($res,$query2->result_array());
+				
+			}
+			
+			return $res;
+			
+			
+
+
+
+		
+               /* $query1=$this->db->query("select * from user_profile as up,user_friends as usr where (up.userId=usr.user_to OR up.userId=usr.user_from) AND (usr.user_to='".$user_to."' OR usr.user_from='".$user_to."')  AND usr.status!='1' ");
+                $totRow1=$query1->num_rows();*/
+		
 	}
 	
 	// Function for search friend Request (Developed By: Avishake Bhattacharjee on 07.05.2015)
-    public function search_friend($res) {
+    public function search_friend2($res) {
         $unit='M';
         $lat1 = $res['lat'];
         $lon1 = $res['long'];
 		$user_id=$res['userid'];
 		$profile_query=$this->db->query("SELECT * FROM `user_profile` Where userId='".$user_id."'");
         $res_profile=$profile_query->result_array();
-		$row_profile=mysqli_fetch_assoc($res_profile);
+		$row_profile=mysql_fetch_assoc($res_profile);
 		$distancevalue=$row_profile['diatance'];
 		$gen=$row_profile['search_gender'];
 		$min_a=$row_profile['min_age'];
 		$max_a=$row_profile['max_age'];
 		$run_query='SELECT * FROM `user_profile` WHERE `age` BETWEEN '.$min_a.' AND '.$max_a;
+		
 		if($gen==1){
 			$res_gen=$run_query.' AND gender='.$gen;
 		}
@@ -156,7 +206,7 @@ class api_model extends MY_Model {
 		}
 		$q=$this->db->query($run_query);
         $res=$q->result_array();
-		while ($rowmain=mysqli_fetch_assoc($res)){
+		while ($rowmain=mysql_fetch_assoc($res)){
 			$lat2=$rowmain['lat'];
 			$lon2=$rowmain['lon'];
 			$dis=distancefromto($lat1,$lon1,$lat2,$lon2,$unit);
@@ -170,16 +220,87 @@ class api_model extends MY_Model {
 		return $rArray;
     }
     
-	// Function for Update GPS information of an user (Developed By: Avishake Bhattacharjee on 07.05.2015)
-    public function update_gpsinfo($res) {
-        $lat = $res['lat'];
-        $lon = $res['long'];
+    // Function for search friend Request (Developed By: Chiranjib Dey on 18.05.2015)
+    public function search_friend($res) {
+        $unit='M';
+        $lat1 = $res['lat'];
+        $lon1 = $res['long'];
 		$user_id=$res['userid'];
-		$table= 'user_profile';
-		$data = array('lat' => $lat, 'lon' => $lon);
-		$where = "userId=".$user_id;
-		$str = $this->db->update_string($table, $data, $where);
-		return 1;
+		
+		$res_profile = $this->db->get_where('user_profile', array('userId' => $user_id))->result_array();
+		$row_profile = $res_profile[0];
+		//print_r($row_profile );die;
+		$distancevalue=$row_profile['distance'];
+		$gen=$row_profile['search_gender'];
+		$min_a=$row_profile['min_age'];
+		$max_a=$row_profile['max_age'];
+		
+	
+		
+		$my_query = "SELECT
+			  *, (
+			    6371* acos (
+			      cos ( radians(".$lat1.") )
+			      * cos( radians( lat ) )
+			      * cos( radians( lon ) - radians(".$lon1.") )
+			      + sin ( radians(".$lat1.") )
+			      * sin( radians( lat ) )
+			    )
+			  ) AS distance
+			FROM `user_profile` WHERE userId != '".$user_id."'";
+		
+		
+		if(!empty($min_a) && !empty($min_a))
+		{
+			$my_query .= " AND `age` BETWEEN ".$min_a." AND ".$max_a;
+			
+		}
+		if($gen==1){
+			$my_query .=' AND gender='.$gen;
+		}
+		if($gen==2){
+			
+			
+			$my_query .=' AND gender='.$gen;
+		}
+			
+			$my_query .=" HAVING distance <= ".$distancevalue."
+			ORDER BY distance";
+		
+		
+		$q=$this->db->query($my_query);
+        	
+		return $q->result_array();
+		
+		
+       // aasort($rArray,"distance");
+		//return $rArray;
+    }
+    
+    
+	// Function for Update GPS information of an user (Developed By: Avishake Bhattacharjee on 07.05.2015)
+	// Modified by Chiranjib Dey on 18-5-2015 
+    public function update_gpsinfo($data, $userid) {
+    //print_r($data);die;
+    		if(!empty($data['lat']) && !empty($data['long']))
+    		{
+    			$lat = $data['lat'];
+        		$lon = $data['long'];
+        		
+        		$data = array('lat' => $lat, 'lon' => $lon);
+    		}
+        
+        	$this->db->where('userId', $userid);
+		$str  = $this->db->update('user_profile', $data); 
+        
+        
+		
+		if($str ){
+			return 1;
+		}else{
+			return 0;
+		}
+		
     }
 	
     // Function for Update GPS information of an user (Developed By: Avishake Bhattacharjee on 07.05.2015)
